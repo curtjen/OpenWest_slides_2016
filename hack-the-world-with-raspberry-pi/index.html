@@ -1,50 +1,342 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style>
+        .reveal img {
+            max-height: 400px;
+        }
+        .reveal p {
+            font-size: 24px;
+        }
+    </style>
+</head>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+<body>
+    <div class="reveal">
+        <div class="slides">
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+
+<section data-markdown>
+    <script type="text/template">
+        # Hack the World Around You with the Raspberry Pi
+
+        ## by Curtis Jensen
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # A Little About Me
+
+        - Web Developer
+        - Crafter
+        - Game Design Hobbiest (come to my workshop tomorrow @ 1pm)
+        - Twitter: @curtjen
+        - Instagram and Pinterest: @tehcletus
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # What is a Raspberry Pi?
+        ![Delicious baked pi](http://media.gizmodo.co.uk/wp-content/uploads/2012/02/RaspberryPi1.jpg)
+
+        Image source: http://media.gizmodo.co.uk/wp-content/uploads/2012/02/RaspberryPi1.jpg
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ![Raspberry Pi Logo](https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo-500x591.png)
+
+        Image source: https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo-500x591.png
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ![Raspberry Pi](https://www.raspberrypi.org/wp-content/uploads/2016/02/Pi_3_Model_B.png)
+
+        Image source: https://www.raspberrypi.org/wp-content/uploads/2016/02/Pi_3_Model_B.png
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # Why the Pi?
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## My reasons:
+        - Use familiar, open source technologies
+        - Flexibility of what languages I can use
+        - Low amount of electricity usage
+        - Small size
+        - Low cost
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # What can it do?
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## A lot
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # General categories
+        - Vanilla
+        - USB peripherals
+        - GPIO
+        - Stuff around you
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # Vanilla
+        ## (keyboard, mouse, monitor)
+        - Basic desktop comuputer
+        - Trello wallboard
+        - Terraria server
+        - Chrome Book
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # USB peripherals
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Retro Pi
+        ![Retro Pi](https://retropie.org.uk/wp-content/uploads/2016/04/Retropie_Splash.png)
+
+        Image source: https://retropie.org.uk/wp-content/uploads/2016/04/Retropie_Splash.png
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Retro Pi Arcade
+        ![Retro Pi Arcade](http://www.iliketomakestuff.com/wp-content/uploads/2016/02/YT_arcade0.jpg)
+
+        Project and image source: http://www.iliketomakestuff.com/arcade-cabinet/
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # GPIO and Serial ports
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Drum Machine
+
+        ![Capacitive touch hat for Raspberry Pi](https://cdn-shop.adafruit.com/970x728/2340-01.jpg)
+
+        Image Source: https://www.adafruit.com/product/2340
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Minecraft Camera
+
+        - Camera serial port
+        - https://www.twitch.tv/dashbangsplat/v/77549017
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # Stuff Around You
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Magic Mirror
+        ![Magic Mirror](https://www.raspberrypi.org/wp-content/uploads/2014/04/heyhandsome.jpg)
+
+        Projects: https://www.raspberrypi.org/blog/magic-mirror/, http://blog.dylanjpierce.com/raspberrypi/magicmirror/tutorial/2015/12/27/build-a-magic-mirror.html
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Jasper
+        ![Jasper](https://jasperproject.github.io/static/img/bg01.jpg)
+
+        Project: https://jasperproject.github.io/
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Stop Motion Pi
+        ![Stop Motion Pi](/images/stop-motion-pi.png)
+
+        Project: https://github.com/davis1410/Stop_Motion_Pi_Pro
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Wii Pi Camera Controller
+        ![Wii Pi Cam Controller](/images/wii-pi-cam-controller.png)
+
+        Project: https://github.com/curtjen/wii-pi-cam-controller
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Setup essential and helpful tools:
+        Run:
+
+        ```
+        sudo apt-get install vim
+        ```
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Install all the things:
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Install git:
+        Run:
+        ```
+        sudo apt-get install git
+        mkdir ~/Programs
+        cd ~/Documents
+        ```
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Get Wiimote camera controller code:
+        Run:
+        ```
+        git clone https://github.com/curtjen/wii-pi-cam-controller
+        cd wii-pi-cam-controller
+        sudo python install.py
+        ```
+        Note: this will take a long time to run since you'll be building from source the needed libraries — Good time to go get lunch or watch a movie or something...
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Test Bluetooth:
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        0. Plug Bluetooth dongle into USB port.
+        0. Run:
+        ```
+        hcitool scan
+        ```
+        0. Press sync button on Wiimote
+        0. If Bluetooth on the Raspberry Pi detects the Wiimote, you should be able to see the it listed in the report when the command completes.
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        ## Test wii-pi-cam-controller.py:
+        Run:
+        ```
+        ./wii-pi-cam-controller.py
+        ```
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # Conclusion
+
+        - Get a Pi
+        - Use Open source
+        - Be creative about what you use to hack the world around you
+
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # Good Resources
+
+        - [raspberrypi.org](https://www.raspberrypi.org/)
+        - [instructables.com](http://www.instructables.com/howto/raspberry+pi/)
+
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+        # About Me
+
+        - Father of 5
+        - Web Developer
+        - Crafter
+        - Game Design Hobbiest (come to my workshop tomorrow @ 1pm)
+        - Twitter: @curtjen
+        - Instagram and Pinterest: @tehcletus
+    </script>
+</section>
+
+
+
+
+
+
+
+
+    </script>
+</section>
+<section data-markdown>
+    <script type="text/template">
+
+    </script>
+</section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            history: true,
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }]
+        });
+    </script>
+</body>
+
 </html>
